@@ -1,0 +1,281 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    list-style: none;
+}
+body{
+    font-family: sans-serif;
+    background-color: white;
+    font-size: 15px;
+    line-height: normal;
+    
+}
+.imgcontainer i{
+    font-size: 90px;
+    margin: 0.3em 1em 0.2em 1.5em;
+}
+.header{
+  background-color: cadetblue;
+  width: 420px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  top:60%;
+  left:50%;
+  
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+.menu{
+    text-align: left;
+    padding-bottom: 1em;
+    
+}
+
+.menu .logo{
+    font-size: 25px;
+    color: yellow;
+    margin: 0 4em;
+    font-weight: 800;
+   
+}
+.fa-user{
+    float: right;
+}
+.fa-bars{
+  margin-right: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.amount{
+    font-size: 35px !important;
+    font-weight: bold;
+}
+.amount-box p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.btn-group{
+    margin:0 0 20px;
+}
+.btn-group .btn{
+    margin: 8px;
+    border-radius: 20px !important;
+    font-size: 12px;
+}
+.text-history{
+    text-align: left;
+    margin: 1.5em 0;
+}
+.text-list{
+    background-color: white;
+    padding: 12px 10px;
+    color:#777 ;
+    font-size: 14px;
+    margin: 7px 0;
+}
+.text-list img{
+    width: 20%;
+}
+
+.text-list p{
+    display: inline-block;
+    color: tomato;
+    margin: 0.5em 0 0 1em;
+    vertical-align: middle;
+}
+.text-list .debit-amount {
+    display: inline-block;
+    text-align: right;
+    color: black;
+    margin: 0.2em 1em 0 5em;
+
+}
+.text-list  i{
+    float: right;
+    display: inline-block;
+    margin-top: 0.7em;
+}
+.footer-menu{
+    margin: 20px -20px 0;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    padding: 10px 10px 0;
+
+}
+.footer-menu p{
+    font-size: 12px;
+}
+.col-md-3{
+    cursor: pointer;
+    
+}
+.col-md-3 a{
+    color: black;
+}
+.col-md-3 a.active{
+    color:white ;
+}
+.col-md-3 a:active,
+.col-md-3 a:hover{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px){
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+}
+.settings{
+    background-color: white;
+    padding: 12px 10px;
+    color:#777 ;
+    font-size: 14px;
+    margin: 7px 0;
+    cursor: pointer;
+}
+
+.settings i{
+    float: left;
+    font-size: 30px;
+    margin: 0.5em 0.15em 0 0.1em;
+}
+.settings p{
+    margin: 0.5em 0 0 0.5em;
+    display: inline-block;
+}
+.settings span{
+    color: black;
+    font-size: x-large;
+   
+    font-weight: 700;
+}
+.settings .details{
+    font-size: 18px;
+    color: grey;
+}
+.settings .text-right{
+    float: right;
+    display: inline-block;
+    font-size: 20px;
+}
+.photo i{
+    font-size: 90px;
+    margin: 0em 1.5em 0.2em 1.5em;
+}
+.photo a{
+    color: white !important;
+    margin: 0.5em 1em 0.5em 7em;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.address h3{
+    color: black;
+}
+hr{
+  border-top: 1px solid gray;
+}
+.address p{
+    font-size: 16px;
+}
+.Wallet{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+.Wallet h4{
+   color: orangered;
+   display: inline-block;
+   vertical-align: top;
+   font-weight: 700;
+}
+.Wallet img{
+    width: 15%;
+    float: right;
+}
+.Wallet p{
+    font-size: 20px;
+    display: block;
+    color: black;
+}
+.Wallet .eth{
+    color:#454A75;
+}
+#upload_link{
+    text-decoration:none;
+}
+#upload{
+    display:none
+}
+
+.vertical_bar{
+   
+	width: 0px;
+	background: #3d5654;
+	height: 100%;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    transition: 0.7s;
+    
+    overflow-x: hidden;
+   
+}
+
+.vertical_bar .profile_info{
+	text-align: center;
+    padding: 20px 25px 10px;
+    border-bottom: 1px solid white;
+}
+.vertical_bar .profile_info .title{
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #c99c33;
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+.vertical_bar .profile_info .sub_title{
+	font-size: 20px;
+	color: #fff;
+}
+
+.vertical_bar .menu{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.vertical_bar .menu li a{
+	display: block;
+	padding: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	margin-bottom: 1px;
+}
+
+.vertical_bar .menu li a .icon{
+	color: #c99c33;
+	width: 25px;
+    display: inline-block;
+}
+
+.vertical_bar .menu li a:hover,
+.vertical_bar .menu li a.active{
+	background: #fff;
+    color: #3d5654;
+    text-decoration: none;
+}
+

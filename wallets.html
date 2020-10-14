@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>settings Page</title>
+</head>
+<body>
+    <div class="header text-center" >
+        <p class="menu" >
+            <a href="#" id="bar" class="open"  onclick="openMenu()">
+            <i class="fas fa-bars"></i></a>
+            <span style="font-size: 20px; color: white;">Profile</span>
+            
+        </p>
+        <div class="text-history">
+        <div class="settings address">
+           <h3>Wallet Addresses</h3>
+           <hr>
+           <p>Wallet allows you to organize your funds into categories, like 
+               spending and savings.
+           </p>
+            <div class="Wallet">
+                <h4>Bitcoin Wallet</h4>
+                <img src="btc.png">
+                <p>Balance<br/>0 BTC</p>
+                <p>Total Received<br />0 BTC</p>
+            </div>
+            <div class="Wallet">
+                <h4 class="eth">Ethereum Wallet</h4>
+                <img src="eth.png">
+                <p>Balance<br/>0 ETH</p>
+                <p>Total Received<br />0 ETH</p>
+            </div>
+            
+        </div>
+       </div>     
+        <div class="footer-menu">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <a href="index.html">
+                  <i class="fas fa-qrcode"></i>
+                  <p>Overview</p>
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <a href="wallets.html" class="active">
+                  <i class="fas fa-wallet"></i>
+                  <p>Wallets</p>
+                  </a>
+                </div>
+                <div class="col-md-3">
+                  <i class="fas fa-th-list"></i>
+                  <p>Transactions</p>
+                </div>
+                <div class="col-md-3">
+                <a href="settings.html">
+                  <i class="fas fa-cog"></i>
+                  <p>Settings</p>
+                </a>
+                </div>
+            </div>
+          </div>
+          <div id="vertical_bar" class="vertical_bar">
+            <div class="profile_info">
+                <a href="#" class="close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </a>
+                <div class="img_holder">
+                  <i class="fas fa-user-circle" style="font-size:100px;"></i>
+                </div>
+                <p class="title">ABCD</p>
+                <p class="sub_title">NGN 0</p>
+            </div>
+            <ul class="menu">
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                      <i class="fas fa-question-circle"></i>
+                    </span>
+                    <span class="text">Help</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                       <i class="fas fa-info-circle"></i>
+                    </span>
+                    <span class="text">About Crypto
+                        Currency</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </span>
+                    <span class="text">Sign out</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                       <i class="fas fa-poll"></i>
+                    </span>
+                    <span class="text">Terms of use</span>
+                   </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon">
+                      <i class="fas fa-shield-alt"></i>
+                    </span>
+                    <span class="text">Privacy Policy</span>
+                  </a>
+                </li>
+            </ul>
+            <div class="overlay"></div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        function openMenu(){
+          document.getElementById('vertical_bar').style.width = '250px';
+          document.getElementById('bar')
+        }
+        function closeMenu(){
+          document.getElementById('vertical_bar').style.width = '0';
+          document.getElementById('bar').style.marginLeft = '0';
+        }
+
+     </script>
+    
+
+</body>
+</html>
